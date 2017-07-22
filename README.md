@@ -81,9 +81,6 @@ if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:kAppleApp
 
 请求App Store评分和评论的类，通过调用+ (void)requestReview方法，发起评分请求。
 
-## demo地址
-demo地址: <https://github.com/Mexiang/evaluate>
-
 
 
 
