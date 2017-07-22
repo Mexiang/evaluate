@@ -29,7 +29,7 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(self.view.frame.size.width/2-80, 100, 160, 44);
-    [button setTitle:[NSString stringWithFormat:@"打开App Store"] forState:UIControlStateNormal];
+    [button setTitle:[NSString stringWithFormat:@"app evaluate"] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor brownColor]];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
