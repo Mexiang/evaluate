@@ -9,9 +9,8 @@
 #import "ViewController.h"
 #import <StoreKit/StoreKit.h>
 
-#define kAppId @"appId"
-
-#define kAppleAppStoreUrlAddress [NSString stringWithFormat:@"https://itunes.apple.com/cn/app/此处省略/id%@?l=en&mt=8",kAppId]
+#define kAppId @""
+#define kAppleAppStoreUrlAddress [NSString stringWithFormat:@"https://itunes.apple.com/cn/app/..../id%@?l=en&mt=8",kAppId]
 
 @interface ViewController ()<SKStoreProductViewControllerDelegate>
 
@@ -23,6 +22,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    /*
+     * 注意：用从demo的时别忘了修改两个宏，用你自己的App id和App Store的地址
+     */
+    
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(self.view.frame.size.width/2-80, 100, 160, 44);
     [button setTitle:[NSString stringWithFormat:@"打开App Store"] forState:UIControlStateNormal];
@@ -32,9 +36,9 @@
     [self.view addSubview:button];
 }
 - (void)buttonAction:(UIButton *)sender {
-//    [self ratingInApp];
+    [self evaluateInApp];
     
-    [self evaluate];
+//    [self evaluate];
 }
 
 #pragma mark 
